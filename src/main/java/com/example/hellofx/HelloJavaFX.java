@@ -11,16 +11,15 @@ import javafx.stage.Stage;
 public class HelloJavaFX extends Application {
     @Override
     public void start(Stage stage) {
-        Label message = new Label("Welcome, Ephraim Mwansa!");
+        Label message = new Label("Welcome, Peter Mumba !");
         Button startButton = new Button("Start");
         Button resetButton = new Button("Reset");
-
-        startButton.setOnAction(event -> {
+       startButton.setOnAction(event -> {
             message.setText("Great! You clicked the button.");
         });
 
         resetButton.setOnAction(event -> {
-            message.setText("Welcome, Ephraim Mwansa!");
+            message.setText("Welcome, Peter Mumba !");
                 });
 
 
@@ -29,7 +28,7 @@ public class HelloJavaFX extends Application {
         layout.getChildren().addAll(message, startButton, resetButton);
 
         Scene scene = new Scene(layout, 500, 300);
-        stage.setTitle("My First JavaFX Application - 202509512");
+        stage.setTitle("My First JavaFX Application - 202508483");
         stage.setScene(scene);
         stage.show();
     }
